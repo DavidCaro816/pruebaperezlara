@@ -1,0 +1,31 @@
+/* Marcador de posición
+   =========== */
+#policies {
+    background-color: var(--tertiary-color);
+}
+
+.container-form {
+    width: 700px;
+}
+
+.pop-filename {
+    left: 149px;
+    transform: translateY(0);
+    max-width: 278px;
+    transition: opacity 100ms, transform 600ms;
+}
+
+.pop-filename::before {
+    top: calc(100% + 6px);
+    left: 20px;
+
+    border-color: var(--tertiary-color) transparent transparent transparent;
+}
+
+.filename:hover ~ .pop-filename, .pop-filename:hover {
+    visibility: visible;
+
+    opacity: 1;
+
+    transform: translateY(-38px);
+}

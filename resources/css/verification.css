@@ -1,0 +1,36 @@
+@import 'components/app/general.css';
+@import 'components/app/header_alternative.css';
+
+.container-confirmation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0 20px;
+    padding: 60px 30px;
+
+    border: 1px solid var(--quaternary-color);
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+.title-confirmation {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.container-img {
+    display: flex;
+
+    padding: 3px;
+
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.description {
+    color: var(--tertiary-color);;
+
+    font-size: 16px;
+}

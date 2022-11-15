@@ -1,0 +1,112 @@
+/* =========== Estilos para tabla =========== */
+
+/* Tabla de datos --> contenedor base
+ * --> Evita el desborde del scrollbar del contenedor de la tabla de datos
+   =========== */
+.table-container {
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 0 0 30px 30px;
+}
+
+/* Contenedor de la tabla de datos
+   =========== */
+.data {
+    overflow: auto;
+
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+/* Tabla
+   =========== */
+.table {
+    position: absolute;
+
+    width: 100%;
+
+    border-right: 20px solid white;
+    border-bottom: 10px solid white;
+    border-left: 20px solid white;
+
+    font-size: var(--quinary-font-size);
+
+    border-collapse: collapse;
+
+    text-align: center;
+}
+
+/* Encabezado de la tabla
+   =========== */
+.thead {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+
+    background: var(--secondary-color);
+}
+
+/* Filas de la tabla
+   =========== */
+.row {
+    height: 53px;
+}
+
+.tbody .row {
+    border-bottom: 1px solid var(--quaternary-color);
+
+    cursor: pointer;
+}
+
+.tbody .row:hover {
+    background: var(--quaternary-color);
+}
+
+.tbody .row:last-child {
+    height: 5px;
+}
+
+/* Fila de la tabla cuando no hay datos
+   =========== */
+.row-not-found {
+    font-size: var(--quaternary-font-size);
+}
+
+/* Columnas de la tabla
+   =========== */
+.row th,
+.row td {
+    padding: 0 4px 0 4px;
+}
+
+/* Contenedor de imágenes de la tabla
+   =========== */
+.container-img {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    max-width: 182px;
+
+    gap: 6px;
+}
+
+/* Imágenes de la tabla
+   =========== */
+.container-img img {
+    width: var(--tertiary-image-size);
+    height: var(--tertiary-image-size);
+    margin: 5px;
+}
+
+/* Última fila de la tabla -> Fila sin contenido
+   Evita que el borde de la tabla impida mostrar correctamente el contenido de la última fila con datos
+   =========== */
+.tbody tr:last-child {
+    height: 10px;
+}

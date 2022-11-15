@@ -1,0 +1,13 @@
+/* Marcador de posición
+   =========== */
+#claims {
+    background-color: var(--tertiary-color);
+}
+
+#container-form {
+    width: 620px;
+}
+
+#group-description {
+    grid-column: 1/3;
+}

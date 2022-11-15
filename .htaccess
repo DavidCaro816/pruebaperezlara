@@ -1,0 +1,9 @@
+php_value display_errors 1
+
+Options All -Indexes
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?action=$1
+ErrorDocument 403 /perezlara/index.php?action=403

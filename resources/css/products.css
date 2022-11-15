@@ -1,0 +1,167 @@
+@import 'components/app/title_header_content.css';
+@import 'components/scrollbar.css';
+@import 'components/buttons.css';
+@import 'components/form_elements/checkbox.css';
+@import 'components/form_elements/input_dropdown.css';
+@import 'new_modal.css';
+@import 'components/app/new.css';
+
+main {
+    height: 100%;
+}
+
+#button-settings {
+    background-color: var(--tertiary-color);
+}
+
+.new-action {
+    position: relative;
+}
+
+.group-header-main {
+    padding: 0 50px 0 21px;
+}
+
+.container-form {
+    width: 380px;
+}
+
+.product-select {
+    top: 0;
+    left: 107%;
+}
+
+.label-file {
+    align-self: flex-start;
+}
+
+.product-content {
+    padding-left: 11px;
+}
+
+.section h2 {
+    font-weight: 500;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.container-card {
+    position: relative;
+
+    width: 190px;
+    height: 120px;
+}
+
+.card {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+    position: absolute;
+
+    width: 190px;
+    height: 120px;
+
+    transition: height 500ms cubic-bezier(.77, 0, .175, 1), transform 500ms cubic-bezier(.77, 0, .175, 1);
+}
+
+.card:hover {
+    height: 310px;
+
+    transform: translateY(-15px);
+}
+
+.card,
+.img-card:not(.card .img-card) {
+    border-radius: 9px;
+    background-color: var(--secondary-color);
+    box-shadow: var(--quinary-box-shadow);
+}
+
+.img-card:not(.card .img-card) {
+    justify-content: space-around;
+
+    padding: 10px;
+}
+
+.insurance-name {
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.card .img-card {
+    justify-content: center;
+}
+
+.img-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 190px;
+    min-height: 120px;
+}
+
+.card-logo {
+    width: var(--quaternary-image-size);
+    height: var(--quaternary-image-size);
+}
+
+.container-list {
+    height: 100%;
+}
+
+.title-list {
+    position: relative;
+
+    height: 41px;
+    margin: 0 0 10px 0;
+    padding: 10px 19px;
+
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+
+    font-weight: 500;
+}
+
+.title-list::after {
+    display: block;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 15px;
+    height: 41px;
+
+    background-color: red;
+
+    content: '';
+    transform: skew(30deg);
+}
+
+.insurance-list {
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+
+    max-height: 138px;
+    margin: 0;
+    padding: 0 26px 0 19px;
+
+    list-style: none;
+
+    gap: 10px;
+}
+
+.insurance {
+    display: flex;
+    align-items: center;
+}

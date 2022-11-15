@@ -1,0 +1,72 @@
+/* =========== Estilos para emails =========== */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:wght@100;500;600&display=swap');
+@import '../app/general.css';
+@import '../buttons.css';
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Contenido principal
+   =========== */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+/* Contenedor del mensaje -> email
+   =========== */
+.card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 25px;
+
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 11px 19px 4px rgb(0 0 0 / 10%);
+
+    gap: 38px;
+}
+
+/* Contenedor del encabezado del email
+   =========== */
+.title {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+/* Encabezado del email
+   =========== */
+.header {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.logo {
+    width: var(--quaternary-image-size);
+}
+
+.title-header,
+.description {
+    margin: 0;
+}
+
+/* Titulo del email -> asunto
+   =========== */
+.title-header {
+    color: var(--tertiary-color);
+}
+
+/* Descripción del email
+   =========== */
+.description {
+    color: rgba(35, 31, 32, .7);
+}

@@ -1,0 +1,129 @@
+/* =========== Estilos para menú contextual =========== */
+
+/* Menú contextual -> oculto
+   =========== */
+.context-menu {
+    visibility: hidden;
+    overflow: hidden;
+
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+
+    width: 188px;
+    margin: 0;
+    padding: 0;
+
+    opacity: 0;
+    border-radius: 17px;
+    background: var(--secondary-color);
+    box-shadow: var(--tertiary-box-shadow);
+
+    font-size: var(--quinary-font-size);
+
+    list-style: none;
+
+    user-select: none;
+    transition: height 300ms;
+}
+
+/* Menú contextual -> visible
+  =========== */
+.is-context-menu-active {
+    visibility: visible;
+
+    height: fit-content;
+
+    opacity: 1;
+}
+
+/* Contenedor del icono de la opción del menu contextual
+   =========== */
+.container-icon-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+
+    border-radius: 9px;
+    background-color: var(--secondary-color);
+}
+
+/* Opciones (acciones) de menú contextual
+  =========== */
+.action {
+    display: flex;
+    align-items: center;
+
+    padding: 8px 14px;
+
+    border-bottom: 1px solid var(--quaternary-color);
+
+    cursor: pointer;
+    transition: background-color 300ms;
+
+    gap: 15px;
+}
+
+.action:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.action:hover .icon-action{
+    animation: rotate 600ms;
+}
+
+@keyframes rotate {
+    25% {
+        transform: rotate(7deg);
+    }
+    50% {
+        transform: rotate(-7deg);
+    }
+    75% {
+        transform: rotate(7deg);
+    }
+}
+
+/* Modal de confirmación que se muestra al dar clic en la opción 'Eliminar' del menú contextual
+  =========== */
+.modal-confirm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: absolute;
+
+    width: max-content;
+    height: 250px;
+    padding: 20px;
+
+    border-radius: 30px;
+}
+
+/* Encabezado del modal de confirmación
+  =========== */
+.modal-confirm .header-modal {
+    justify-content: space-around;
+
+    gap: 20px;
+}
+
+/* Icono de advertencia de modal de confirmación
+  =========== */
+.warning-modal {
+    align-self: center;
+
+    width: var(--quaternary-image-size);
+    height: var(--quaternary-image-size);
+}
+
+/* Pie de modal de confirmación
+  =========== */
+.modal-confirm .footer-modal {
+    justify-content: center;
+}

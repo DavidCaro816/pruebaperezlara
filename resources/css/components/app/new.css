@@ -1,0 +1,16 @@
+/* ===========  Estilos para encabezado sección 'Nuevo' =========== */
+
+/* Sección 'Nueva acción'
+   =========== */
+.new-action {
+    margin-left: 50px;
+}
+
+/* Grupos del encabezado
+   =========== */
+.group-header-main {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}

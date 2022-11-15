@@ -1,0 +1,133 @@
+/* =========== Estilos para botones =========== */
+
+/* Botones
+   =========== */
+.primary-button,
+.secondary-button,
+.tertiary-button,
+.quaternary-button,
+.quinary-button {
+    color: var(--secondary-color);
+    border: none;
+
+    cursor: pointer;
+    transition: transform 270ms, box-shadow 270ms;
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.tertiary-button:hover,
+.quaternary-button:hover,
+.quinary-button:hover {
+    transform: scale(1.02);
+}
+
+.primary-button:active,
+.secondary-button:active,
+.tertiary-button:active,
+.quaternary-button:active,
+.quinary-button:active {
+    transform: scale(.98);
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+    box-shadow: var(--secondary-box-shadow);
+}
+
+/* Para botones con imágenes
+   =========== */
+.button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+/* Primer botón
+   =========== */
+.primary-button {
+    width: 170px;
+    height: 48px;
+
+    border-radius: 17px;
+}
+
+/* Imagen de botón
+   =========== */
+.primary-button img {
+    width: var(--primary-image-size);
+    height: var(--primary-image-size);
+}
+
+/* Segundo botón
+   =========== */
+.secondary-button {
+    width: 140px;
+    height: 42px;
+
+    border-radius: 14px;
+
+    font-size: var(--quinary-font-size);
+}
+
+/* Tercer botón
+   =========== */
+.tertiary-button {
+    width: 250px;
+    height: 54px;
+}
+
+/* Cuarto botón
+   =========== */
+.quaternary-button {
+    width: 220px;
+    height: 50px;
+}
+
+/* Border y fuente para tercer y cuarto botón
+   =========== */
+.tertiary-button,
+.quaternary-button {
+    border-radius: 20px;
+
+    font-size: var(--quaternary-font-size);
+}
+
+.quinary-button {
+    width: 90px;
+    height: 40px;
+
+    border-radius: 9px;
+
+    gap: 10px;
+}
+
+/* Enlaces como botones
+   =========== */
+.a-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+/* Estados de botones
+   =========== */
+.button-is-block {
+    width: 100%;
+}
+
+.button-is-red {
+    background-color: var(--primary-color);
+}
+
+.button-is-black {
+    background-color: var(--tertiary-color);
+}
+
+.button-is-green {
+    background-color: #169154;
+}

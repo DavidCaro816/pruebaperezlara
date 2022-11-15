@@ -1,0 +1,154 @@
+/* =========== Estilos para calendario =========== */
+
+/* Contenedor del calendario
+   =========== */
+.container-calendar {
+    flex-basis: 50%;
+
+    padding: 6px;
+}
+
+/* Contenedor de las acciones del calendario
+   =========== */
+.caption-date {
+    justify-content: space-between;
+
+    padding-left: 6px;
+}
+
+/* Información de que se esta mostrando
+- Rango de años
+- Meses de un año
+- Un mes específico de un año
+   =========== */
+.title-calendar {
+    padding: 4px;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+}
+
+.title-calendar:hover {
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+}
+
+/* Contenedor de iconos de acción del calendario
+   =========== */
+.caption-date,
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+/* Iconos para avanzar y retroceder en el calendario
+   =========== */
+.icon-back,
+.icon-next {
+    cursor: pointer;
+}
+
+.icon-back {
+    transform: rotate(180deg);
+}
+
+.icon-back:active,
+.icon-next:active {
+    filter: brightness(.8);
+}
+
+/* Calendario oculto
+   =========== */
+.is-calendar-inactive {
+    display: none;
+}
+
+/* Encabezado del calendario -> dias de la semana
+   Días de un mes
+   =========== */
+.weekday,
+.day {
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    text-align: center;
+}
+
+/* Días del mes, meses de un año o años en un rango
+   =========== */
+.day,
+.item {
+    cursor: pointer;
+}
+
+.day:hover:not(.is-selected),
+.item:hover {
+    background-color: var(--quaternary-color);
+}
+
+/* Día actual
+   =========== */
+.today {
+    outline: 1px solid rgb(35 31 32 / 70%);
+}
+
+/* Día seleccionado
+   =========== */
+.is-selected {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.is-selected:hover {
+    background-color: red;
+}
+
+/* Resaltar fecha
+    - Item (Día, mes, año) no permitido debido a que es una fecha posterior a la actual
+    - Días son pertenecientes al mes anterior o al mes siguiente del que se esta mostrando
+   =========== */
+.not-belonging {
+    color: rgba(35, 31, 32, .7);
+}
+
+/* Listado de meses o años
+   =========== */
+.list {
+    display: none;
+
+    padding: 6px;
+
+    gap: 7px;
+    place-content: center;
+}
+
+/* Listado de meses
+   =========== */
+.list-month {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Listado de años
+   =========== */
+.list-year {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Listado -> activo (visible)
+   =========== */
+.is-list-active {
+    display: grid;
+}
+
+/* Meses de un año o años en un rango
+   =========== */
+.item {
+    padding: 5px;
+
+    border-radius: 9px;
+
+    text-align: center;
+}

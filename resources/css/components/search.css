@@ -1,0 +1,84 @@
+/* =========== Estilos para input de búsqueda =========== */
+
+/* Contenedor input 'Buscar'
+   =========== */
+.search {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    width: 196px;
+
+    border-radius: 17px;
+    background-color: var(--secondary-color);
+    box-shadow: var(--primary-box-shadow);
+
+    transition: box-shadow 300ms;
+}
+
+.search:hover {
+    box-shadow: var(--secondary-box-shadow);
+}
+
+/* Input 'Buscar'
+   =========== */
+.input-search {
+    width: 125px;
+    height: 48px;
+    padding: 15px 20px;
+
+    border: none;
+    border-radius: 17px 0 0 17px;
+    outline: none;
+}
+
+/* Contenedor icono (Buscar) del input 'Buscar'
+   =========== */
+.input-search + .container-icon-search {
+    right: 7px;
+}
+
+.container-icon-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.container-icon-search:hover {
+    background-color: var(--quaternary-color);
+}
+
+/* Icono input 'Buscar'
+   =========== */
+.icon-search {
+    width: var(--primary-image-size);
+    height: var(--primary-image-size);
+}
+
+/* Contenedor icono (Borrar) del input 'Buscar'
+   =========== */
+.container-icon-clear-search {
+    z-index: 1;
+    right: 42px;
+}
+
+.icon-clear-search {
+    width: var(--primary-image-size);
+    height: var(--primary-image-size);
+}
+
+/* No mostrar icono de borrar cuando no haya contenido en el input
+   =========== */
+.input-search:placeholder-shown ~ .container-icon-clear-search {
+    display: none;
+}

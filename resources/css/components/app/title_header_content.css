@@ -1,0 +1,12 @@
+/* =========== Estilos para el titulo del encabezado del contenido principal =========== */
+
+#title {
+    margin: 0;
+
+    color: var(--primary-color);
+
+    font-size: var(--primary-font-size);
+    font-weight: 500;
+
+    user-select: none;
+}

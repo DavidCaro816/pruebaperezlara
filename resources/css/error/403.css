@@ -1,0 +1,78 @@
+.padlock {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+
+    margin-top: 60px;
+}
+
+.top {
+    position: absolute;
+    z-index: -1;
+
+    width: calc(100% - 40px);
+    height: 65px;
+
+    border: 5px solid var(--primary-color);
+    border-radius: 36px 36px 0 0;
+
+    transform: translateY(calc(-100% + 5px));
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 132px;
+    height: 110px;
+
+    border: 5px solid var(--primary-color);
+    border-radius: 20px 20px 40px 40px;
+}
+
+.key-cylinder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+
+    width: 15px;
+    height: 40px;
+
+    border: 5px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.key-cylinder::after {
+    display: block;
+
+    position: absolute;
+    bottom: 15px;
+
+    width: 5px;
+    height: 10px;
+
+    background: var(--secondary-color);
+
+    content: '';
+}
+
+.key-cylinder::before {
+    display: block;
+
+    position: relative;
+    top: -10px;
+
+    min-width: 25px;
+    min-height: 25px;
+
+    border: 5px solid var(--primary-color);
+    border-radius: 50%;
+    background: var(--secondary-color);
+
+    content: '';
+}

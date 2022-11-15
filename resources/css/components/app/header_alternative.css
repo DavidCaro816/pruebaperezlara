@@ -1,0 +1,29 @@
+/* Encabezado de la página de error
+   =========== */
+.header {
+    position: fixed;
+    user-select: none;
+    width: 100%;
+    padding: 10px;
+
+    background: var(--secondary-color);
+}
+
+/* Logo de la empresa
+   =========== */
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+/* Contenido principal
+   =========== */
+.main {
+    flex-direction: column;
+
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

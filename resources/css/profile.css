@@ -1,0 +1,119 @@
+@import 'new_modal.css';
+@import 'components/form_elements/input_dropdown.css';
+@import 'components/buttons.css';
+
+#button-settings {
+    background-color: var(--tertiary-color);
+}
+
+main {
+    padding-left: 100px;
+}
+
+.is-main-active {
+    padding-left: 226px;
+}
+
+.container-profile {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+    max-height: 1820px;
+    margin: 0 30px 30px 0;
+
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+    box-shadow: var(--quaternary-box-shadow), 35px 35px 0 0 var(--secondary-color),
+    34px 34px 10px 0 rgb(171 158 149 / 15%);
+}
+
+.header-profile {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    padding: 30px;
+
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+
+    gap: 30px;
+}
+
+.container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+
+.img-profile {
+    width: 100%;
+    height: 100%;
+}
+
+.label-file-profile {
+    display: flex;
+
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+
+    padding: 8px;
+
+    border-radius: 50%;
+    background: var(--primary-color);
+
+    cursor: pointer;
+}
+
+.form-profile {
+    width: 100%;
+    max-width: 686px;
+}
+
+.info-profile {
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px;
+
+    gap: 15px;
+}
+
+.fieldset-profile {
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px 0 0 0;
+
+    border: none;
+
+    gap: 10px;
+}
+
+.legend {
+    font-size: 25px;
+}
+
+#send-form {
+    align-self: flex-end;
+}
+
+#modal-form {
+    width: 400px;
+}
+
+.verify-email {
+    text-align: center;
+}

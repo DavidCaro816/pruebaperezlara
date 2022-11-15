@@ -1,0 +1,149 @@
+/* Marcador de posición
+   =========== */
+#quotes {
+    background-color: var(--tertiary-color);
+}
+
+/* Contenedor de formulario -> evita desborde del scrollbar
+   =========== */
+.container-form {
+    overflow: hidden;
+}
+
+/* Fieldset donde esta la tabla del formulario
+   =========== */
+.fieldset-table {
+    height: 100%;
+}
+
+/* Formulario
+   =========== */
+.form {
+    overflow-y: scroll;
+
+    width: 1000px;
+    height: 583px;
+    padding: 25px 17px 25px 25px;
+}
+
+/* Mensaje -> tabla vacía, no se han seleccionado opciones
+   =========== */
+.message-empty-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+
+    color: #231f2099;
+
+    font-size: var(--tertiary-font-size);
+}
+
+/* Ocultar mensaje -> Tabla con datos
+   =========== */
+.is-message-empty-table-inactive {
+    display: none;
+}
+
+/* Contenedor de la tabla del formulario -> evita desborde del scrollbar
+   =========== */
+.container-table-form {
+    display: grid;
+    overflow: hidden;
+
+    border-radius: 20px;
+}
+
+/* Tabla del formulario
+   =========== */
+.table-form {
+    overflow-x: scroll;
+
+    max-width: 914px;
+    max-height: 409px;
+
+    border-radius: 20px;
+    background: var(--secondary-color);
+
+    border-collapse: collapse;
+}
+
+/* Tabla del formulario con datos
+   =========== */
+.is-table-form-active {
+    display: block;
+}
+
+/* Encabezado de la tabla
+   =========== */
+.table-form thead {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+
+    background: var(--secondary-color);
+
+    text-align: center;
+}
+
+/* Primera columna de la tabla es fija
+   =========== */
+.table-form thead tr:first-child th:first-child,
+.table-form tr td:first-child {
+    position: sticky;
+    left: 0;
+
+    padding-left: 25px;
+
+    background-color: var(--secondary-color);
+}
+
+/* Bordes para elemento th y td
+   =========== */
+.table-form tr th:not(.table-form tr th:last-child),
+.table-form tr td:not(.table-form tr td:last-child) {
+    border-right: 1px solid var(--quaternary-color);
+}
+
+/* Filas de la tabla
+   =========== */
+.table-form tr {
+    height: 50px;
+
+    border-bottom: 1px solid var(--quaternary-color);
+}
+
+/* Primera columna de la tabla
+   =========== */
+.table-form tr td:first-child {
+    min-width: 250px;
+    max-width: 250px;
+}
+
+/* Texto centrado para columnas de la tabla ( desde la segunda columna en adelante)
+   =========== */
+.table-form tr td ~ td {
+    text-align: center;
+}
+
+/* Input de tabla
+   =========== */
+.input-title {
+    width: 120px;
+    height: 28px;
+    margin: 0 20px 0 20px;
+    padding: 0 10px;
+
+    border: 1px solid #dcdcdc;
+    border-radius: 9px;
+
+    font-size: var(--quinary-font-size);
+}
+
+/* Focus para input de tabla
+   =========== */
+.input-title:focus {
+    outline: 1px solid var(--tertiary-color);
+}
+

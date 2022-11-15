@@ -1,0 +1,52 @@
+/* =========== Estilos para errores =========== */
+@import '../app/general.css';
+@import '../app/header_alternative.css';
+@import '../buttons.css';
+
+.container-error-code {
+    user-select: none;
+}
+
+.container-error-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor del error
+   =========== */
+.container-error-code {
+    gap: 15px;
+}
+
+/* Primer y tercer número del error
+   =========== */
+.number {
+    color: var(--primary-color);
+
+    font-family: sans-serif;
+    font-size: 175px;
+    font-weight: 900;
+}
+
+/* Titulo del error
+   =========== */
+.error-message {
+    margin-bottom: 0;
+
+    color: var(--tertiary-color);
+
+    font-weight: 500;
+}
+
+/* Descripción del error
+   =========== */
+.error-description {
+    margin-bottom: 30px;
+
+    color: rgba(35, 31, 32, .7);
+
+    font-size: var(--quaternary-font-size);
+
+    text-align: center;
+}

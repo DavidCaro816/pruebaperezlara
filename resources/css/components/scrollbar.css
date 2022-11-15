@@ -1,0 +1,24 @@
+/* =========== Estilos para scrollbar =========== */
+
+/* CSS scrollbar para firefox
+   =========== */
+.scrollbar {
+    scrollbar-color: var(--tertiary-color) #fff;
+    scrollbar-width: auto;
+}
+
+/* Scrollbar para navegadores webkit
+   =========== */
+.scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: none;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background-color: var(--tertiary-color);
+}

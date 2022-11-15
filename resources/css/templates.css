@@ -1,0 +1,7 @@
+@import 'components/app/title_header_content.css';
+
+/* Marcador de posición
+   =========== */
+#templates {
+    background-color: var(--tertiary-color);
+}

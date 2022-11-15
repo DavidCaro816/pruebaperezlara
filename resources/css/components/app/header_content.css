@@ -1,0 +1,81 @@
+/* =========== Estilos para plantilla del encabezado del content principal =========== */
+@import 'title_header_content.css';
+@import '../search.css';
+@import '../buttons.css';
+@import '../form_elements/input_dropdown.css';
+@import 'new.css';
+
+/* Encabezado contenido principal
+   =========== */
+.header-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 0 50px 0 21px;
+
+    user-select: none;
+
+    gap: 15px;
+}
+
+/* Botón de descarga
+   =========== */
+.button-download {
+    position: relative;
+
+    text-decoration: none;
+}
+
+.button-download:focus {
+    outline: none;
+}
+
+.button-download .quinary-button {
+    z-index: 1;
+}
+
+/* Contenedor de icono de descarga
+   =========== */
+.download {
+    position: absolute;
+
+    width: 78%;
+    height: 100%;
+    padding-top: 10px;
+
+    border-radius: 9px;
+    background-color: var(--tertiary-color);
+
+    cursor: pointer;
+    transition: transform 500ms cubic-bezier(.77, 0, .175, 1);
+    transform: translateY(0);
+    text-align: center;
+}
+
+/* Contendor de icono de descarga -> activo
+   =========== */
+.button-download:hover .download {
+    transform: translateY(78%);
+}
+
+/* Icono de descarga
+   =========== */
+.download svg polyline,
+.download svg line {
+    animation: docs 1s infinite;
+}
+
+@keyframes docs {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-15%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}

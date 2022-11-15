@@ -1,0 +1,193 @@
+/* Botón 'Nuevo'
+   =========== */
+#new-button:focus {
+    outline: 4px solid rgba(237, 28, 36, .5);
+}
+
+/* Contenedor fondo modal 'Nuevo'
+   =========== */
+.backdrop {
+    display: flex;
+    visibility: hidden;
+    align-items: flex-start;
+    justify-content: center;
+
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100%;
+
+    opacity: 0;
+    background-color: #2323237f;
+
+    transition: opacity 300ms;
+}
+
+/* Contenedor fondo modal 'Nuevo' -> Activo
+   =========== */
+.is-backdrop-active {
+    visibility: visible;
+
+    opacity: 1;
+
+    transition: opacity 100ms;
+}
+
+/* Contenedor formulario
+   =========== */
+.container-form {
+    position: sticky;
+    top: 0;
+
+    opacity: 0;
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+
+    transition: all 400ms;
+}
+
+/* Formulario
+   =========== */
+.form {
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px;
+
+    gap: 25px;
+}
+
+/* Modal 'Nuevo' -> Activo
+   =========== */
+.is-modal2-active {
+    visibility: visible;
+
+    opacity: 1;
+
+    transition: transform 640ms;
+    transform: translateY(65px);
+}
+
+/* Encabezado formulario
+   =========== */
+.header-modal {
+    display: flex;
+    align-items: center;
+}
+
+.form .header-modal {
+    justify-content: space-between;
+}
+
+/* Titulo formulario
+   =========== */
+.title-form {
+    margin: 0;
+
+    color: var(--tertiary-color);
+
+    font-size: var(--secondary-font-size);
+    font-weight: 500;
+}
+
+/* Botón para cerrar formulario
+   =========== */
+.close-modal {
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    background-color: var(--quaternary-color);
+}
+
+/* Cuerpo del formulario (Datos a llenar)
+   =========== */
+.body-modal {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(213px, 1fr));
+}
+
+.body-modal,
+.body-modal-f {
+    gap: 15px;
+}
+
+.body-modal-f {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fieldset de formulario
+   =========== */
+.fieldset {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    margin: 0;
+    padding: 18px;
+
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(235 235 236 / 60%);
+
+    gap: 10px;
+}
+
+.is-fieldset-hidden{
+    display: none;
+}
+
+/* Legend de fieldset
+   =========== */
+.legend {
+    display: contents;
+}
+
+/* Contenedor botones del formulario
+   =========== */
+.form .footer-modal {
+    justify-content: flex-end;
+}
+
+.body-modal-f + .footer-modal {
+    justify-content: space-between;
+}
+
+.footer-modal {
+    display: flex;
+
+    gap: 15px;
+}
+
+/* Alerta de error en la petición
+   =========== */
+.alert-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+
+    width: 100%;
+    height: 40px;
+
+    color: var(--secondary-color);
+    background: var(--primary-color);
+
+    transition: transform 300ms;
+    transform: translateY(-100%);
+}
+
+/* Alerta de error en la petición -> activo
+   =========== */
+.is-alert-error-active {
+    transform: translateY(0);
+}

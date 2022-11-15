@@ -1,0 +1,14 @@
+@import '../components/email/email.css';
+
+/* Contenedor del mensaje -> email
+   =========== */
+.card {
+    width: 445px;
+}
+
+/* Contenedor de acción del mensaje
+   =========== */
+.action {
+    display: flex;
+    justify-content: center;
+}

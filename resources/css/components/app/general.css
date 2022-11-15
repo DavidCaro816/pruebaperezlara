@@ -1,0 +1,51 @@
+/* =========== Normalización y variables para estilos =========== */
+@import '../../normalize.css';
+
+/* 1. Variables
+   ====================================================== */
+:root {
+    /* Fuentes
+      =========== */
+    --font-family: 'Roboto', sans-serif;
+    /* Sombras
+      =========== */
+    --primary-box-shadow: 0 5px 10px 1px rgb(194 194 194 / 50%);
+    /* Colores
+      =========== */
+    --primary-color: rgb(237, 28, 36);
+    --primary-font-size: 50px;
+    /* Tamaños imágenes
+      =========== */
+    --primary-image-size: 24px;
+    --quaternary-box-shadow: rgb(171 145 149 / 20%) 0 0 2px 0,
+    rgb(171 158 149 / 15%) 0 12px 24px -4px;
+    --quaternary-color: #ebebec;
+    --quaternary-font-size: 18px;
+    --quaternary-image-size: 60px;
+    --quinary-box-shadow: 0 0 10px 1px rgb(194 194 194 / 50%);
+    --quinary-color: #fafbfe;
+    --quinary-font-size: 14px;
+    --secondary-box-shadow: 0 5px 10px 1px rgb(137 136 136 / 50%);
+    --secondary-color: #fff;
+    --secondary-font-size: 32px;
+    --secondary-image-size: 32px;
+    --senary-font-size: 13px;
+    --tertiary-box-shadow: 0 0 10px 0 rgb(188 188 188);
+    --tertiary-color: #231f20;
+    --tertiary-font-size: 28px;
+    --tertiary-image-size: 42px;
+}
+
+/* 2. General
+   ====================================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--quinary-color);
+
+    font-family: var(--font-family);
+}

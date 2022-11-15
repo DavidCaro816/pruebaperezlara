@@ -1,0 +1,56 @@
+/* =========== Estilos para filtros =========== */
+
+/* Contenedor de filtros
+   =========== */
+.filter-group-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    padding: 20px 20px 15px 20px;
+
+    user-select: none;
+
+    gap: 10px;
+}
+
+/* Filtros
+   =========== */
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 180px;
+    height: 42px;
+    padding: 0 20px;
+
+    border: none;
+    border-radius: 16px;
+    background-color: var(--secondary-color);
+
+    font-size: var(--quinary-font-size);
+
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+/* Icono de filtro
+   =========== */
+.filter img {
+    width: 24px;
+    height: 24px;
+}
+
+.filter:hover {
+    box-shadow: var(--secondary-box-shadow);
+}
+
+/* Contenedor de botones de filtros
+   =========== */
+.filter-button-container {
+    display: flex;
+
+    gap: 10px;
+}
